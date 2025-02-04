@@ -1,0 +1,112 @@
+body{
+  background-image:url('img/Hanheppilandingpage2.jpg');
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+  overflow: hidden; /* Hide scrollbars */
+  }
+
+
+
+  img{
+  width: 16%
+  }
+
+  .papers.flex {
+    display: flex;
+    justify-content: space-around;  }
+
+  .papers {
+
+    padding-top: 11%;
+    padding-left: 32%;
+
+    width: 100vw;
+  }
+
+
+
+  
+  /* FADE SHIT im not using anymore
+.fadeimage { 
+  background-image: url('img/Hanheppilandingpage2.jpg');
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0%; }
+  }
+
+.fadeimage:active {
+  animation: fadeOut 2s;
+
+}
+
+.fadeimage:hover{
+  cursor: pointer;
+}
+
+*/
+
+
+/* button*/
+
+button {
+  background-image: url(img/Hanheppilandingpage1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  /* put the height and width of your image here */
+  width: 100vw;
+  height: 100vh;
+  border: none;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+/* responsive design*/
+
+@media (max-width: 768px){
+
+  button {
+    background-image: url(img/buttonforphone.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    /* put the height and width of your image here */
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  }
+
+  /*  background-image:url('img/Hanheppilandingpage2.jpg');
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+  overflow: hidden; /* Hide scrollbars */*/
+  
+  body{
+    background-image:url('img/Hanheppilandingpage2.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: black;
+    overflow: hidden; /* Hide scrollbars */
+    }
+
+
+}
+

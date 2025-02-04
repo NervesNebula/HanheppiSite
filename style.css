@@ -1,0 +1,455 @@
+/* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  overflow: hidden;
+}
+
+ link peramaters 
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+section.hScroll {
+  height: 100vw;
+  width: 100vh;
+  padding: 20px;
+  background: #222;
+  overflow: hidden auto;
+  transform-origin: right top;
+  transform: rotate(-90deg) translateY(-100vh);
+}
+
+.hScroll_block {
+  width: calc(100vh - 40px);
+  height: calc(100vh - 40px);
+  background: url(/img/anatomy1.jpg);
+  margin-bottom: 20px;
+  position: relative;
+  transform-origin: left top;
+  transform: rotate(90deg) translateY(calc(-100vh + 40px));
+}
+
+
+.hScroll_block:last-child {
+  margin: 0;
+}
+
+
+.hScroll_block:nth-child(1) .background {
+  background: url(/img/osard.png);
+}
+
+.hScroll_block:nth-child(1):hover {
+    background: url(/img/page0.png);
+  }
+
+.hScroll_block:nth-child(2) .background {
+    
+  background: url(/img/osard.png);
+}
+
+.hScroll_block:nth-child(2):hover {
+    
+    background: url(/img/osard.png);
+  }
+
+.hScroll_block:nth-child(3) .background {
+  background: url(/img/osard.png);
+}
+
+.hScroll_block:nth-child(4) .background {
+  background: url(/img/osard.png);
+}
+
+.hScroll_block:nth-child(5) .background {
+  background: url(/img/osard.png);
+}
+
+
+
+section.hScroll .hScroll_block .background {
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: luminosity;
+}
+
+
+  
+.hScroll_block .letter {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-weight: bold;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+*/
+
+body{
+  background-color: black;
+  color:rgb(246, 233, 167);
+}
+
+/* this control the placement of the image. for some reason.*/
+
+.fuck {
+  margin-left: 1rem;
+  margin-top: 0rem;
+  width: 25rem;
+  position: absolute;
+  z-index: 100;
+
+}
+
+.fuck2 {
+  margin-left: 1rem;
+  margin-top: 0rem;
+  width: 20rem;
+  position: absolute;
+  z-index: 100;
+
+}
+
+
+a {
+  text-decoration: rgb(198, 231, 148);
+}
+
+a:hover {
+  cursor:pointer;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.container {
+  position:fixed;
+  top: 40px; 
+  z-index: 88;
+  left: 0;
+  width: 100vh;
+  height: calc(100vw);
+  /*WHY DO THESE THINGS UP HERE STOP THE LINK*/
+
+  scrollbar-color: black black ;
+  overflow: scroll;
+  transform: rotate(-90deg);
+  transform-origin: center calc(50vh);
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1em auto;
+  padding: 2em;
+  width: 500px;
+  height: 500px;
+
+  transform: rotate(90deg);
+
+  text-align: right;
+}
+
+
+
+/*image z and rotate index*/
+
+.box-image-1 {
+  margin-top: 5vh;
+  margin-left: 10vw;
+  z-index: 5;
+  position: fixed;
+}
+
+.image1 {
+  height: 70vh;
+  rotate: 10deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer
+}
+
+.image1:hover {
+  transform: scale(1.3) rotate(-10deg);
+}
+
+.box-image-1:hover {
+  z-index: 100;
+  
+}
+
+/*image2*/
+.box-image-2 {
+  margin-top: 6vh;
+  margin-left: 50vw;
+  z-index: 4;
+  position: fixed;
+}
+
+.image2 {
+  height: 70vh;
+  rotate: -8deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer
+}
+
+.image2:hover {
+  transform: scale(1.3) rotate(8deg);
+}
+
+.box-image-2:hover {
+  z-index: 100;
+}
+/*image3*/
+
+
+.box-image-3 {
+  margin-top: 5vh;
+  margin-left: 90vw;
+  z-index: 3;
+  position: fixed;
+}
+
+.image3 {
+  height: 70vh;
+  rotate: -3deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer
+}
+
+.image3:hover {
+  transform: scale(1.4) rotate(3deg);
+}
+
+.box-image-3:hover {
+  z-index: 100;
+}
+
+/*image4*/
+.box-image-4 {
+  margin-top: 5vh;
+  margin-left: 130vw;
+  z-index: 1;
+  position: fixed;
+}
+
+.image4 {
+  height: 70vh;
+  rotate: -6deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer
+}
+
+.image4:hover {
+  transform: scale(1.1) rotate(6deg);
+}
+
+.box-image-4:hover {
+  z-index: 100;
+}
+
+/*image5*/
+.box-image-5 {
+  margin-top: 5vh;
+  margin-left: 170vw;
+  padding-right: 10vw;
+
+  z-index: 1;
+  position: fixed;
+}
+
+.image5 {
+  height: 70vh;
+  rotate: 13deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer
+}
+
+.image5:hover {
+  transform: scale(1.4) rotate(-13deg);
+}
+
+.box-image-5:hover {
+  z-index: 100;
+}
+
+/*image6 gloves*/
+.box-image-glove {
+  margin-top: -12vh;
+  margin-left: 240vw;
+  padding-right: 3vw;
+
+  z-index: 1;
+  position: fixed;
+}
+
+.imageglove {
+  height: 70vh;
+  rotate: 13deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer;
+  background-image: url('img/hondogloves.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+.imageglove:hover {
+  transform: scale(1.2) rotate(-13deg);
+  z-index: 100;
+  height: 70vh;
+  rotate: 13deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer;
+  background-image: url('img/hondogloves2.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*image6 tassel*/
+.box-image-tassels {
+  margin-top: -12vh;
+  margin-left: 240vw;
+  padding-right: 3vw;
+
+  z-index: 1;
+  position: fixed;
+}
+
+.imagetassel {
+  height: 70vh;
+  rotate: 13deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer;
+  background-image: url('img/quinntassels.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+.imagetassel:hover {
+  transform: scale(1.2) rotate(-13deg);
+  z-index: 100;
+  height: 70vh;
+  rotate: 13deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer;
+  background-image: url('img/quinntassels.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+/*phone screen size change*/
+@media (max-width: 768px){
+  
+  
+  
+  .center {
+    display:grid;
+        margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+  
+  .container {
+    position:fixed;
+    top: 40px; 
+    z-index: 88;
+    left: 0;
+    width: 60vh;
+    height: 100vw;
+    /*WHY DO THESE THINGS UP HERE STOP THE LINK*/
+  
+    scrollbar-color: black black ;
+    overflow: scroll;
+    transform: rotate(0deg);
+    transform-origin: center calc(50vh);
+  }
+  
+  .child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 1em auto;
+    padding: 2em;
+    width: 500px;
+    height: 500px;
+  
+    transform: rotate(0deg);
+  
+    text-align: right;
+  }
+  
+  /*image5*/
+.box-image-5 {
+  margin-top: 5vh;
+  margin-left: 10vw;
+  padding-right: 0vw;
+
+  z-index: 1;
+  position: fixed;
+}
+
+.image5 {
+  height: 100vh;
+  rotate: 13deg;
+  transform-origin: 50% 60%;
+  transition: transform .8s ease;
+  transition-property: transform, width;
+  cursor: pointer
+}
+
+
+
+
+  
+}
