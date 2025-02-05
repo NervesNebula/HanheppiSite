@@ -425,17 +425,18 @@ a:hover {
   position: fixed;
 }
 
+
 .hondo1{
   height: 40vh;
   rotate: 10deg;
   transform-origin: 50% 60%;
   transition: transform .8s ease;
   transition-property: transform, width;
-  cursor: pointer
 }
 
 .hondo1:hover {
   transform: scale(1.5) rotate(-10deg);
+  cursor: pointer
 }
 
 .box-hondo1:hover {
