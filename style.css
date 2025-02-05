@@ -436,7 +436,7 @@ a:hover {
 
 .hondo1:hover {
   transform: scale(1.5) rotate(-10deg);
-  cursor: pointer
+  cursor: pointer;
 }
 
 .box-hondo1:hover {
