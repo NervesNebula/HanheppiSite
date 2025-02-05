@@ -245,7 +245,7 @@ a:hover {
 }
 
 .image3:hover {
-  transform: scale(1.4) rotate(3deg);
+  transform: scale(1.3) rotate(3deg);
 }
 
 .box-image-3:hover {
@@ -262,7 +262,7 @@ a:hover {
 
 .image4 {
   height: 70vh;
-  rotate: -6deg;
+  rotate: 6deg;
   transform-origin: 50% 60%;
   transition: transform .8s ease;
   transition-property: transform, width;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .image4:hover {
-  transform: scale(1.3) rotate(6deg);
+  transform: scale(1.3) rotate(-6deg);
 }
 
 .box-image-4:hover {
@@ -281,40 +281,33 @@ a:hover {
 
 /*image4 stone*/
 .box-image-4-stone {
-  margin-top: 2vh;
-  margin-left: 130vw;
-  padding-right: 3vw;
-
+  margin-top: 3vh;
+  margin-left: 135vw;
   z-index: 1;
   position: fixed;
 }
 
 .image4stone {
   height: 70vh;
-  rotate: 13deg;
+  rotate: -6deg;
   transform-origin: 50% 60%;
   transition: transform .8s ease;
   transition-property: transform, width;
   cursor: pointer;
+
   background-image: url('img/page4stone.png');
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
 
 .image4stone:hover {
-  transform: scale(1.4) rotate(-13deg);
-  z-index: 100;
-  height: 70vh;
-  rotate: 13deg;
+  transform: scale(1.2) rotate(6deg);
   cursor: pointer;
   background-image: url('img/page4stone2.png');
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
-  z-index:100;
 }
 
 .box-image-4-stone:hover {
@@ -324,7 +317,7 @@ a:hover {
 /*image5*/
 .box-image-5 {
   margin-top: 4vh;
-  margin-left: 180vw;
+  margin-left: 187vw;
   padding-right: 10vw;
 
   z-index: 1;
@@ -333,7 +326,7 @@ a:hover {
 
 .image5 {
   height: 70vh;
-  rotate: 13deg;
+  rotate: 10deg;
   transform-origin: 50% 60%;
   transition: transform .8s ease;
   transition-property: transform, width;
@@ -341,7 +334,7 @@ a:hover {
 }
 
 .image5:hover {
-  transform: scale(1.3) rotate(-13deg);
+  transform: scale(1.3) rotate(-10deg);
 }
 
 .box-image-5:hover {
@@ -351,7 +344,7 @@ a:hover {
 /*image6 gloves*/
 .box-image-glove {
   margin-top: -12vh;
-  margin-left: 240vw;
+  margin-left: 255vw;
   padding-right: 3vw;
 
   z-index: 1;
@@ -392,7 +385,6 @@ a:hover {
 .box-image-tassels {
   margin-top: -12vh;
   margin-left: 250vw;
-  padding-right: 3vw;
 
   z-index: 1;
   position: fixed;
@@ -400,11 +392,10 @@ a:hover {
 
 .imagetassel {
   height: 70vh;
-  rotate: 13deg;
+  rotate: 14deg;
   transform-origin: 50% 60%;
   transition: transform .8s ease;
   transition-property: transform, width;
-  cursor: pointer;
   background-image: url('img/quinntassels.png');
   background-size: 70%;
   background-repeat: no-repeat;
@@ -414,15 +405,15 @@ a:hover {
 }
 
 .imagetassel:hover {
-  transform: scale(1.2) rotate(-13deg);
-  z-index: 100;
+  transform: scale(1.2) rotate(-14deg);
   height: 70vh;
-  rotate: 13deg;
   cursor: pointer;
   background-image: url('img/quinntassels2.png');
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 100;
+
 }
 
 
